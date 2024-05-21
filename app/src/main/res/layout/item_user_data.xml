@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".RetrieveActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/placeholder"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/placeholder"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/imageView1" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/placeholder"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/imageView2" />
+
+        <TextView
+            android:id="@+id/heightTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/black"
+            android:text="Height: "
+            android:layout_below="@id/imageView3"/>
+
+        <TextView
+            android:id="@+id/religionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/heightTextView"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/black"
+            android:text="Religion: " />
+
+        <TextView
+            android:id="@+id/communityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/religionTextView"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/black"
+            android:text="Community: " />
+
+        <TextView
+            android:id="@+id/smokeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/communityTextView"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/black"
+            android:text="Smoke: " />
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/smokeTextView"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/black"
+            android:text="Status: " />
+
+        <TextView
+            android:id="@+id/drinkingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/statusTextView"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/black"
+            android:text="Drinking: " />
+
+        <TextView
+            android:id="@+id/languageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/drinkingTextView"
+            android:textColor="@color/black"
+            android:text="Language: " />
+
+    </RelativeLayout>
+
+</ScrollView>

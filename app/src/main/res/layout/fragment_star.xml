@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/placeholder"
+                android:scaleType="centerCrop"
+                android:layout_alignParentTop="true" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/placeholder"
+                android:scaleType="centerCrop"
+                android:layout_below="@id/imageView1" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/placeholder"
+                android:scaleType="centerCrop"
+                android:layout_below="@id/imageView2" />
+
+            <TextView
+                android:id="@+id/heightTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"
+                android:text="@string/height"
+                android:layout_below="@id/imageView3"/>
+
+            <TextView
+                android:id="@+id/religionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@id/heightTextView"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"
+                android:text="@string/religion" />
+
+            <TextView
+                android:id="@+id/communityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@id/religionTextView"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"
+                android:text="@string/community" />
+
+            <TextView
+                android:id="@+id/smokeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@id/communityTextView"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"
+                android:text="@string/smoke" />
+
+            <TextView
+                android:id="@+id/statusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@id/smokeTextView"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"
+                android:text="@string/status" />
+
+            <TextView
+                android:id="@+id/drinkingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@id/statusTextView"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"
+                android:text="@string/drinking" />
+
+            <TextView
+                android:id="@+id/languageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@id/drinkingTextView"
+                android:textColor="@color/black"
+                android:text="@string/language" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_below="@id/languageTextView" >
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/reject"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="16dp"/>
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/like"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="16dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
